@@ -1,9 +1,14 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 main {
   margin: 20px;
 }
 
 h1 {
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
@@ -16,7 +21,7 @@ p {
 }
 
 .header, .footer {
-  background-color: grey;
+  background-color: #444;
   height: 100px;
   color: #fff;
   text-align: center;
@@ -56,5 +61,24 @@ p {
     grid-row-start: 4;
     grid-row-end: 6;
     padding: 20px;
+  }
+
+  nav {
+    float: left;
+  }
+  
+  .button, a:hover {
+    background-color: #888;
+  }
+  
+  .button {
+    background-color: #666;
+    color: #fff;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 10px;
   }
 }
