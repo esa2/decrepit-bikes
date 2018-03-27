@@ -1,0 +1,53 @@
+main {
+  margin: 20px;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-rows: 100px;
+}
+
+.header, .footer {
+  background-color: grey;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+  }
+
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 20px;
+  }
+  
+  .box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 20px;
+  }
+}
+
+
+
+
+
