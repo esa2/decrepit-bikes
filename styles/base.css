@@ -21,7 +21,7 @@ p {
 }
 
 .header, .footer {
-  background-color: #444;
+  background-color: #2c2c2c;
   height: 100px;
   color: #fff;
   text-align: center;
@@ -31,17 +31,16 @@ p {
   padding-top: 20px;
 }
 
-.navbar a:not(:last-child) {
+.navlink {
   display: none;
 }
 
-.navbar a.icon {
+.navicon {
   float: right;
-  display: block;
 }
 
 .navbar {
-  background-color: #444;
+  background-color: #2c2c2c;
 }
 
 .navbar a {
@@ -51,15 +50,21 @@ p {
 }
 
 .navbar.open {
-    position: relative;
+  position: relative;
 }
 
-.navbar.open a.icon {
+.navbar.open a.navicon {
   position: absolute;
   right: 0;
   top: 0;
-
 }
+
+.navbar.open a.navicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .navbar.open a {
   float: none;
   display: block;
@@ -96,5 +101,22 @@ p {
     grid-row-start: 4;
     grid-row-end: 6;
     padding: 20px;
+  }
+
+  .navlink {
+    display: inline;
+  }
+
+  .navicon {
+    display: none;
+  }
+
+  .navbar {
+    float: left;
+  }
+
+  .navbar a:hover {
+    background-color: #fff;
+    color: #2c2c2c;
   }
 }
