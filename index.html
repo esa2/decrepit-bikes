@@ -11,11 +11,12 @@
 <body>
   <header class="header">
     <h1>Decrepit Bikes</h1>
-    <nav>
-      <a class="button" href="index.html">Home</a>
-      <a class="button" href="index.html">1929 JDL</a>
-      <a class="button" href="index.html">1971 TC120</a>
-      <a class="button" href="index.html">1972 F7A</a>
+    <nav class="navbar" id="navbar-id">
+      <a class="active" href="index.html">Home</a>
+      <a href="index.html">1929 JDL</a>
+      <a href="index.html">1971 TC120</a>
+      <a href="index.html">1972 F7A</a>
+      <a class="icon" href="javascript:void(0);" onclick="navbarToggle()">&#9776;</a>
     </nav>
   </header>
   <main>
@@ -34,5 +35,6 @@
   <footer class="footer">
     <p class="copyright">&copy; 2018</p>
   </footer>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
