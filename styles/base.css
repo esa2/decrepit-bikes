@@ -6,12 +6,6 @@ main {
   margin: 20px;
 }
 
-h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 20px;
-}
-
 p {
   line-height: 1.6em;
 }
@@ -20,7 +14,16 @@ p {
   padding: 10px;
 }
 
-.header, .footer {
+.header {
+  background-color: #2c2c2c;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  padding-top: 14px;
+  font-size: 1.5em;
+}
+
+.footer {
   background-color: #2c2c2c;
   height: 100px;
   color: #fff;
@@ -31,44 +34,72 @@ p {
   padding-top: 20px;
 }
 
-.navlink {
-  display: none;
+#menu-checkbox {
+  position: absolute;
+  opacity: 0;
 }
 
-.navicon {
-  float: right;
+.menu-label {
+  left: 0px;
+  height: 40px;
+  width: 50px;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  transition: .3s ease-in-out;
 }
 
-.navbar {
-  background-color: #2c2c2c;
+.menu-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  left: 13px;
+  top: 18px;
+  box-shadow: 0 6px 0 #fff, 0 12px 0 #fff;
 }
 
-.navbar a {
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  background: #2f2f2f;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  transition: .3s ease-in-out;
+}
+
+.nav-menu a {
   color: #fff;
-  padding: 16px 16px;
   text-decoration: none;
 }
 
-.navbar.open {
-  position: relative;
+.nav-li {
+  margin-bottom: 30px;
 }
 
-.navbar.open a.navicon {
-  position: absolute;
-  right: 0;
-  top: 0;
+#menu-checkbox:checked ~ .menu-label {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8);
 }
 
-.navbar.open a.navicon {
-  position: absolute;
-  right: 0;
-  top: 0;
+#menu-checkbox:checked ~ .menu-label,
+#menu-checkbox:checked ~ header {
+  left: 300px;
 }
 
-.navbar.open a {
-  float: none;
-  display: block;
-  text-align: left;
+#menu-checkbox:checked ~ .nav-menu {
+  left: 0px;
+}
+
+#menu-checkbox:checked ~ .wrapper {
+  margin-left: 300px;
 }
 
 .image-size-80 {
@@ -76,7 +107,7 @@ p {
 }
 
 @media screen and (min-width: 1100px) {
-  
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -90,7 +121,7 @@ p {
     grid-row-end: 3;
     padding: 20px;
   }
-  
+
   .box2 {
     grid-column-start: 2;
     grid-column-end: 3;
