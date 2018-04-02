@@ -9,26 +9,93 @@
   <title>Decrepit bikes</title>
 </head>
 <body>
-  <header class="header">
-    <h1>Decrepit Bikes</h1>
-    <nav class="navbar" id="navbar-id">
-      <a class="navlink" href="index.html">HOME</a>
-      <a class="navlink" href="index.html">1971 TC120</a>
-      <a class="navlink" href="index.html">1972 F7A</a>
-      <a class="navicon" href="javascript:void(0);" onclick="navbarToggle()">&#9776;</a>
-    </nav>
-  </header>
-  <main>
-  <div>
-    <img class="image-size-80 image-size-full" src="./styles/assets/jdl/leftJDL.png" alt="left side of jdl motorcycle">
-  </div>
-  <div>
-    <p>1929 Harley Davidson JDH</p><p>1929 was the last year the of 74 cubic inch (1200cc) JD models and the last year of the 74 cubic inch F-head engine. Harley introduced the 74 cubic inch V series flat heads in 1930.</p><p>The JDL pictured above is a lesser known configuration of the popular JD models. I have not been able to get any figures on production volumes of the JDL but I believe it is even rarer still than the two-cam JDH. Scarcity does not translate to value though, as JDH models command much higher prices than any other JD models including the JDL. The official Harley Davidson publication "The Legend Begins" which reproduces order blanks and lists production volumes for all their motorcycles from 1903 thru 1969 has no reference of the JDL at all. Production numbers for 1929 are listed as 10,182 for the JD, no mention of JDL or JDH so I assume their totals are part of the overall 10,182. The 1929 order form listed the JD, JDS (sidecar model), and JDH two-cam, again no mention of the JDL. The 1928 order form does list a JDXL model that has Dow Metal Pistons. I believe the X part of the model designation to mean experimental and that the X designation was dropped from the model as it went into production and became the JDL.</p><p>I have found references to the JDL in two of Jerry Hatfield's excellent books on early HD motorcycles. I quote here from page 68 of Jerry Hatfield's "Inside Harley-Davidson An Engineering History of the Motor Company from F-Heads to Knuckleheads 1903-1945".</p><p>"For sporting riders not willing to go the Two Cam route, there were the new Special Sport Solo models, the 61 ci JL and 74 ci JDL. The L motors were high-performance versions of the standard (one-cam) motors that featured larger inlet valves and valve cages. Like the Two Cam Models, the Special Sport Solo models had narrower tanks that gave an impression of nimbleness and 18 in. wheels that lowered the saddle height about 1 in. Shorter roadster handlebars were standard on both the Two Cams and the Special Sport Solos."</p><p>The JDL is also referenced in In Jerry Hatfield's "Standard Catalog of American Motorcycles 1898-1981" where performance figures are given on page 158.</p><p><strong>Models            Key Feature(s)            Engine Data                         New Features, Misc.            Cost</strong></p><p>29JD                regular engine               73.7 ci(1207cc) twin          22 hp @3200 rpm                  $320</p><p>29JDH              two-cam                         73.7 ci(1207cc) twin          29 hp                                              $370</p><p>29JDL               Dow Metal pistons    73.7 ci(1207cc) twin         26 hp                                              n/a</p><p>If anyone out there has reliable figures on how many of the 10,182 JD models produced in 1929 were JDH or JDL models I would love to here about it. My guess is there is really no way of knowing anymore as HD did not list the production numbers for these models separately that I have seen. I see quite a few JDH models for sale but as the JDH is rare and the most sought after JD model there appear to be some fake JDH models on the market. I rarely ever see JDL models listed for sale so I assume they are rare compared to the JD and even the JDH, as anyone back in the day who wanted a high performance bike would probably spring for the slightly more expensive two cam JDH vs the sport model single cam JDL.</p>
-  </div>
+  <input type="checkbox" id="menu-checkbox" name="menu-checkbox" />
+  <label for="menu-checkbox" class="menu-label"></label>
+  <header class="header">Decrepit Bikes</header>
+  <nav class="nav-menu">
+    <ul>
+      <li class="nav-li">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-li">
+        <a href="index.html">1971 TC120</a>
+      </li>
+      <li class="nav-li">
+        <a href="index.html">1972 F7A</a>
+      </li>
+      <li class="nav-li">
+        <a href="index.html">About Us</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="one-column">
+    <div>
+      <img class="image-size-80 image-size-full" src="./styles/assets/jdl/leftJDL.png" alt="left side of jdl motorcycle">
+    </div>
+    <div>
+      <h3>1929 Harley Davidson JDH</h3>
+      <p>1929 was the last year the of 74 cubic inch (1200cc) JD models and the last year of the 74 cubic inch F-head engine.
+        Harley introduced the 74 cubic inch V series flat heads in 1930.</p>
+      <p>The JDL pictured above is a lesser known configuration of the popular JD models. I have not been able to get any figures
+        on production volumes of the JDL but I believe it is even rarer still than the two-cam JDH. Scarcity does not translate
+        to value though, as JDH models command much higher prices than any other JD models including the JDL. The official
+        Harley Davidson publication "The Legend Begins" which reproduces order blanks and lists production volumes for all
+        their motorcycles from 1903 thru 1969 has no reference of the JDL at all. Production numbers for 1929 are listed
+        as 10,182 for the JD, no mention of JDL or JDH so I assume their totals are part of the overall 10,182. The 1929
+        order form listed the JD, JDS (sidecar model), and JDH two-cam, again no mention of the JDL. The 1928 order form
+        does list a JDXL model that has Dow Metal Pistons. I believe the X part of the model designation to mean experimental
+        and that the X designation was dropped from the model as it went into production and became the JDL.</p>
+      <p>I have found references to the JDL in two of Jerry Hatfield's excellent books on early HD motorcycles. I quote here
+        from page 68 of Jerry Hatfield's "Inside Harley-Davidson An Engineering History of the Motor Company from F-Heads
+        to Knuckleheads 1903-1945".</p>
+      <p>"For sporting riders not willing to go the Two Cam route, there were the new Special Sport Solo models, the 61 ci JL
+        and 74 ci JDL. The L motors were high-performance versions of the standard (one-cam) motors that featured larger
+        inlet valves and valve cages. Like the Two Cam Models, the Special Sport Solo models had narrower tanks that gave
+        an impression of nimbleness and 18 in. wheels that lowered the saddle height about 1 in. Shorter roadster handlebars
+        were standard on both the Two Cams and the Special Sport Solos."</p>
+      <p>The JDL is also referenced in In Jerry Hatfield's "Standard Catalog of American Motorcycles 1898-1981" where performance
+        figures are given on page 158.</p>
+      <table class="table-jd">
+        <tr>
+          <th>Model</th>
+          <th>Feature</th>
+          <th>Engine</th>
+          <th>Performance</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>29JD</td>
+          <td>Regular engine</td>
+          <td>73.7 ci(1207cc) twin</td>
+          <td>22 hp @3200 rpm</td>
+          <td>$320</td>
+        </tr>
+        <tr>
+          <td>29JDH</td>
+          <td>Two-cam</td>
+          <td>73.7 ci(1207cc) twin</td>
+          <td>29 hp</td>
+          <td> $370</td>
+        </tr>
+        <tr>
+          <td>29JDL</td>
+          <td>Dow Metal pistons</td>
+          <td>73.7 ci(1207cc) twin</td>
+          <td>26 hp</td>
+          <td>n/a</td>
+        </tr>
+      </table>
+      <p>If anyone out there has reliable figures on how many of the 10,182 JD models produced in 1929 were JDH or JDL models
+        I would love to here about it. My guess is there is really no way of knowing anymore as HD did not list the production
+        numbers for these models separately that I have seen. I see quite a few JDH models for sale but as the JDH is rare
+        and the most sought after JD model there appear to be some fake JDH models on the market. I rarely ever see JDL models
+        listed for sale so I assume they are rare compared to the JD and even the JDH, as anyone back in the day who wanted
+        a high performance bike would probably spring for the slightly more expensive two cam JDH vs the sport model single
+        cam JDL.</p>
+    </div>
   </main>
   <footer class="footer">
     <p class="copyright">&copy; 2018</p>
   </footer>
-  <script src="scripts/app.js"></script>
 </body>
 </html>
