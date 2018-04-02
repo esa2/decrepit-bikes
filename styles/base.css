@@ -51,7 +51,7 @@ p {
   height: 40px;
   width: 50px;
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   transition: .2s ease-in-out;
 }
