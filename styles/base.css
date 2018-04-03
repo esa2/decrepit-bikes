@@ -166,6 +166,22 @@ th, td {
     padding: 20px;
   }
 
+  .box4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 13;
+    padding: 2
+  }
+
+  .box5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 13;
+    padding: 2
+  }
+
   .nav-li {
     display: inline;
     padding-right: 16px;
