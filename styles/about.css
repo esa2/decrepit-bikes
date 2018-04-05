@@ -37,41 +37,4 @@
     grid-row-end: 14;
     padding: 20px;
   }
-
-  .nav-li {
-    display: inline;
-    padding-right: 16px;
-  }
-
-  .menu-label:before {
-    display: none;
-  }
-
-  #menu-checkbox:checked ~ .menu-label {
-    height: 0;
-    width: 0;
-    transition: none;
-  }
-
-  .nav-menu {
-    position: absolute;
-    top: 0px;
-    left: 30px;
-    height: 30px;;
-    width: 440px;
-    transition: none;
-  }
-
-  .nav-menu a:hover {
-    background-color: #fff;
-    color: #2c2c2c;
-  }
-
-  /* .image-size-80 {
-    width: 500px;
-  }
-
-  .image-size-full {
-    width: 90%;
-  } */
 }
