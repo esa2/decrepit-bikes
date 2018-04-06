@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <title>Decrepit bikes</title>
+</head>
+
+<body>
+  <input type="checkbox" id="menu-checkbox" name="menu-checkbox" />
+  <label for="menu-checkbox" class="menu-label"></label>
+  <header class="header">Decrepit Bikes</header>
+  <nav class="nav-menu">
+    <ul>
+      <li class="nav-li">
+        <a href="../index.html">HOME</a>
+      </li>
+      <li class="nav-li">
+        <a href="./markup/jdl.html">1929 JDL</a>
+      </li>
+      <li class="nav-li">
+        <a href="./markup/tc120.html">1971 TC120</a>
+      </li>
+      <li class="nav-li">
+        <a href="./markup/f7a.html">1972 F7A</a>
+      </li>
+      <li class="nav-li">
+        <a href="./markup/about.html">ABOUT US</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h3>Contact us</h3>
+    <div class="form-wrapper">
+      <form action="mailto:admin@decrepitbikes.com" method="post" enctype="text/plain">
+        <label class="block" for="fname">Name</label>
+        <input type="text" id="name" name="name" placeholder="name">
+        <label class="block" for="email">email</label>
+        <input type="text" id="email" name="email" placeholder="email">
+        <div>
+          <div>
+            <p>Subject</p>
+            <input type="radio" id="subject" name="subject" value="jdl">
+            <label for="subject">1929 HD JDL</label>
+          </div>
+          <div>
+            <input type="radio" id="subject" name="subject" value="tc120">
+            <label for="subject">1971 Suzuki TC120</label>
+          </div>
+          <div>
+            <input type="radio" id="subject" name="subject" value="f7a">
+            <label for="subject">1972 Kawasaki F7A</label>
+          </div>
+          <div>
+            <input type="radio" id="subject" name="subject" value="other">
+            <label for="subject">Other</label>
+          </div>
+        </div>
+        <label class="block" for="message">Message</label>
+        <textarea id="message" name="message" style="height:200px"></textarea>
+        <div class="center">
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Decrepit Bikes</p>
+  </footer>
+</body>
+
+</html>
