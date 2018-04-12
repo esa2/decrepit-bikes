@@ -76,8 +76,6 @@ p {
   height: 100%;
   width: 300px;
   background: #2f2f2f;
-  overflow-x: hidden;
-  overflow-y: scroll;
   padding: 20px;
 }
 
@@ -206,7 +204,7 @@ th, td {
   .nav-li {
     display: inline;
     padding-right: 14px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .menu-label:before {
@@ -224,7 +222,7 @@ th, td {
     top: 0px;
     left: 20px;
     height: 30px;;
-    width: 460px;
+    width: 450px;
     transition: none;
   }
 
