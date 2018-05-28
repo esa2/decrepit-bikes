@@ -38,8 +38,13 @@ p {
   text-align: center;
 }
 
-.footer p {
+.footer-text {
   padding-top: 30px;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 #menu-checkbox {
